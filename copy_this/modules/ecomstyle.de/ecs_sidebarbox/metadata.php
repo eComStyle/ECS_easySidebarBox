@@ -5,7 +5,7 @@ $aModule = array(
     'title'        => '<strong style="color:#04B431;">e</strong><strong>ComStyle.de</strong>:  <i>easySidebarBox</i>',
     'description'  => array(
         'de' => 'Einfach eine neue Sidebarbox anlegen! Nehmen Sie die erforderlichen Einstellungen in den Moduleinstellungen vor.
-                <br><iframe frameborder="no" width="600px" height="400px" src="http://tinyurl.com/m23ozfo"></iframe>',
+                <br><iframe frameborder="no" width="600px" height="400px" src="https://ssl-account.com/incl.oxidtheme.de/gratis.html"></iframe>',
     ),
     'version'      => '1.0',
     'thumbnail'    => 'ecomstyle.png',
