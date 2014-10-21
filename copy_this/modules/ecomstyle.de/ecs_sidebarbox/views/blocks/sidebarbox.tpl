@@ -1,4 +1,4 @@
-<?php
+[{*
 /*    Please retain this copyright header in all versions of the software
  *
  *    Copyright (C) 2014  Josef A. Puckl | eComStyle.de
@@ -16,4 +16,23 @@
  *    You should have received a copy of the GNU General Public License
  *    along with this program.  If not, see {http://www.gnu.org/licenses/}.
  */
-$sVendorMetadataVersion = '1.0';
+*}]
+[{assign var="oConf" value=$oViewConf->getConfig()}]
+[{assign var="sidebarbox" value=$oConf->getConfigParam('ecs_sbb_ident') }]
+[{if $oView->getClassName()!='start'}]
+    [{$smarty.block.parent}]
+[{/if}]
+<div class="box">
+    <h3>[{$oConf->getConfigParam('ecs_sbb_title') }]</h3>
+    <div class="content">
+         <span>
+            [{$oConf->getConfigParam('ecs_sbb_text') }]
+        </span>
+        <span>
+            [{oxifcontent ident=$sidebarbox object="oCont"}][{$oCont->oxcontents__oxcontent->value}][{/oxifcontent}]
+        </span>
+    </div>
+</div>
+[{if $oView->getClassName()=='start'}]
+    [{$smarty.block.parent}]
+[{/if}]
